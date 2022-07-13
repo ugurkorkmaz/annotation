@@ -1,4 +1,4 @@
-module app
+module github.com/ugurkorkmaz/annotation
 
 go 1.18
 
