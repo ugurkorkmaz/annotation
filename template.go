@@ -1,3 +1,6 @@
+package annotation
+
+const fiber string = `
 package {{.Package}}
 
 import (
@@ -10,3 +13,4 @@ func routeLoad(http *fiber.App) {
     http.Add("{{.Method}}", "{{.Path}}", example.{{.Handler}})
     {{end}}
 }
+`

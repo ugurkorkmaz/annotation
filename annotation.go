@@ -12,6 +12,7 @@ import (
 	"text/template"
 )
 
+//go:generate go run ./generate --directory=./example --package=example --mode=fiber --output=./example/routes.go
 type Config struct {
 	Directory string // Handler or Controller directory path
 	Package   string // Output package name
@@ -75,7 +76,7 @@ func (a *App) ParseHandlerDirName() string {
 }
 func (a *App) Generate() {
 
-	temp, _ := template.ParseFiles("template/" + a.Config.Mode + ".tmpl")
+	temp, _ := template.New("routes").Parse(fiber)
 
 	f, _ := os.Create(a.Config.Output)
 	i, _ := debug.ReadBuildInfo()
