@@ -12,7 +12,6 @@ import (
 	"text/template"
 )
 
-//go:generate go run ./generate --directory=./example --package=example --mode=fiber --output=./example/routes.go
 type Config struct {
 	Directory string // Handler or Controller directory path
 	Package   string // Output package name

@@ -76,7 +76,7 @@ $ go get github.com/ugurkorkmaz/annotation
 ```go
 package main
 
-//go:generate go run github.com/ugurkorkmaz/annotation/generate --directory=./handler ...
+//go:generate go run github.com/ugurkorkmaz/annotation/generate --directory=./example --package=example --mode=fiber --output=./example/routes.go
 ```
 
 ```bash
