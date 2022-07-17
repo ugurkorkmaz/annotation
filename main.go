@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/alexflint/go-arg"
-	"github.com/ugurkorkmaz/annotation"
+	"github.com/ugurkorkmaz/annotation/annotation"
 )
 
 func main() {
